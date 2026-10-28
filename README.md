@@ -111,6 +111,22 @@ py run.py --flask
 ```
 Open your browser to: [http://localhost:5000](http://localhost:5000)
 
+### Public demo deployment
+
+The public demo entry points are read-only: non-GET/HEAD/OPTIONS requests are
+blocked, so public visitors cannot upload evidence, create or modify cases,
+chat, or generate reports.
+
+**Streamlit Community Cloud:** Create a new app from this GitHub repository,
+set the main file to `streamlit_app.py`, and deploy. It provides a read-only
+case and sample-evidence viewer.
+
+**Vercel:** Import this repository as a new project and deploy from the
+repository root. `pyproject.toml` explicitly selects the Flask application
+in `backend/vercel_app.py`, avoiding framework auto-detection ambiguity.
+Vercel serverless functions have ephemeral storage, so this demo is not
+suitable for persistent uploads.
+
 ---
 
 ## 📁 Directory Structure
