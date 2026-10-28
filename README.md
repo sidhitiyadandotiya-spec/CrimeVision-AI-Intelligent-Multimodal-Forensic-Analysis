@@ -1,0 +1,2 @@
+# CrimeVision-AI-Intelligent-Multimodal-Forensic-Analysis
+CrimeVision AI – Intelligent Multimodal Forensic Analysis Platform is an advanced forensic intelligence system designed to automate crime scene reconstruction and digital evidence analysis using multimodal artificial intelligence. The platform integrates image, video, and audio data to detect people, weapons, and objects, analyze actions, and etc.
